@@ -1,13 +1,15 @@
 {
   "id": "juemingdc.qx.sub",
   "name": "Chance 订阅",
-  "description": "该订阅为Chance自用，来源自网络。",
+  "descs_html": [
+    "该订阅为 Chance 自用，来源自网络。"
+  ],
   "author": "@JuemingDC",
   "icon": "https://raw.githubusercontent.com/JuemingDC/QuantumultX/main/Icon/We.jpg",
   "repo": "https://github.com/JuemingDC/QuantumultX",
   "apps": [
     {
-      "id": "juemingdc.qx",
+      "id": "juemingdc.telegram.redirect.qx",
       "name": "Telegram 第三方客户端重定向",
       "descs_html": [
         "用于 Quantumult X，将 t.me 链接重定向到指定第三方 Telegram 客户端。",
@@ -53,7 +55,10 @@
       ],
       "author": "@JuemingDC",
       "repo": "https://github.com/JuemingDC/QuantumultX",
-      "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png","https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"]
+      "icons": [
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png",
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+      ]
     }
   ]
 }
