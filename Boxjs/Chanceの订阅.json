@@ -1,6 +1,7 @@
 {
-  "id": "juemingdc.telegram.redirect.qx.sub",
-  "name": "Chanceの订阅",
+  "id": "juemingdc.qx.sub",
+  "name": "Chance 订阅",
+  "description":"该订阅为Chance自用，来源自网络。",
   "author": "@JuemingDC",
   "icon": "https://raw.githubusercontent.com/JuemingDC/QuantumultX/main/Icon/We.jpg",
   "repo": "https://github.com/JuemingDC/QuantumultX",
