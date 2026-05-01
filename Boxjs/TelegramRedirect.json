@@ -2,6 +2,7 @@
   "id": "juemingdc.telegram.redirect.qx.sub",
   "name": "Telegram Redirect",
   "author": "@JuemingDC",
+  "icon": "https://raw.githubusercontent.com/JuemingDC/QuantumultX/main/Icon/We.jpg"
   "repo": "https://github.com/JuemingDC/QuantumultX",
   "apps": [
     {
