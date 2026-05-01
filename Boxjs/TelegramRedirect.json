@@ -52,10 +52,7 @@
       ],
       "author": "@JuemingDC",
       "repo": "https://github.com/JuemingDC/QuantumultX",
-      "icons": [
-        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png",
-        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
-      ]
+      "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png","https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"]
     }
   ]
 }
