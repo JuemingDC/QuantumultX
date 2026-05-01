@@ -7,7 +7,7 @@
   "repo": "https://github.com/JuemingDC/QuantumultX",
   "apps": [
     {
-      "id": "juemingdc.telegram.redirect.qx",
+      "id": "juemingdc.qx",
       "name": "Telegram 第三方客户端重定向",
       "descs_html": [
         "用于 Quantumult X，将 t.me 链接重定向到指定第三方 Telegram 客户端。",
