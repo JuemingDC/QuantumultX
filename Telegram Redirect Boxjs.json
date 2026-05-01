@@ -2,7 +2,7 @@
   "id": "juemingdc.telegram.redirect.qx.sub",
   "name": "Telegram Redirect",
   "author": "@JuemingDC",
-  "repo": "https://github.com/JuemingDC/Surge",
+  "repo": "https://github.com/JuemingDC/QuantumultX",
   "apps": [
     {
       "id": "juemingdc.telegram.redirect.qx",
@@ -50,7 +50,7 @@
         }
       ],
       "author": "@JuemingDC",
-      "repo": "https://github.com/JuemingDC/Surge",
+      "repo": "https://github.com/JuemingDC/QuantumultX",
       "icons": [
         "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png",
         "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
