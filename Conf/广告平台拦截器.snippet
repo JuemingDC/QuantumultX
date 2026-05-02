@@ -8,6 +8,24 @@
 #!source=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
 #!date=2026-05-02
 
+# AND,((DOMAIN-KEYWORD,tnc),(OR,(DOMAIN-SUFFIX,...))),DIRECT
+host-wildcard, *tnc*.capcutapi.com, direct
+host-wildcard, *tnc*.zijieapi.com, direct
+host-wildcard, *tnc*.isnssdk.com, direct
+host-wildcard, *tnc*.toutiaoapi.com, direct
+host-wildcard, *tnc*.bytedance.com, direct
+host-wildcard, *tnc*.snssdk.com, direct
+host-wildcard, *tnc*.sgsnssdk.com, direct
+
+# AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
+host-wildcard, *-ad-*.byteimg.com, reject
+
+# AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal.zijieapi.com)),REJECT
+host-wildcard, *ads*-normal.zijieapi.com, reject
+
+# AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com)),REJECT
+host-wildcard, *adash*.ut.taobao.com, reject
+
 host-keyword, adstrategy, reject
 host, lf-ad-ies.bytecdn.cn, reject
 host, dig.bdurl.net, reject
