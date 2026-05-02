@@ -588,7 +588,7 @@ server=119.29.29.29
 server=8.8.8.8
 server=1.1.1.1
 # DOH类型的dns服务器
-doh-server=https://dns.alidns.com/dns-query,https://doh.pub/dns-query
+#doh-server=https://dns.alidns.com/dns-query,https://doh.pub/dns-query
 
 # 指定dns服务器
 
