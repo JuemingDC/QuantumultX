@@ -1,144 +1,142 @@
-# ===== HTTPDNS 拦截器 for Quantumult X =====
-# Converted from Kelee
-# 类型：QX snippet 混合格式
-# 包含：[filter_local] + [rewrite_local] + [mitm]
+#!name=HTTPDNS拦截器
+#!desc=拦截常见 HTTPDNS 服务；Quantumult X 混合 snippet 格式，包含分流规则、重写规则和 MITM hostname。
+#!author=QingRex, converted for Quantumult X
+#!source=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+#!date=2026-05-02
 
-[filter_local]
-HOST-KEYWORD,httpdns,REJECT
-HOST-KEYWORD,httpsdns,REJECT
+# ===== Rules =====
+host-keyword, httpdns, reject
+host-keyword, httpsdns, reject
+user-agent, httpdns*, reject
+user-agent, httpsdns*, reject
+user-agent, Httpdns*, reject
+user-agent, Httpsdns*, reject
 
-USER-AGENT,httpdns*,REJECT
-USER-AGENT,httpsdns*,REJECT
-USER-AGENT,Httpdns*,REJECT
-USER-AGENT,Httpsdns*,REJECT
+host, yyapp-httpdns.gslb.yy.com, reject
+host, union-httpdns.gslb.yy.com, reject
+host, yuyin-httpdns.gslb.yy.com, reject
+host, httpdns-v6.gslb.yy.com, reject
+host, dns2.q2cdn.com, reject
+host, dns.weixin.qq.com, reject
+host, dns.weixin.qq.com.cn, reject
+host, aedns.weixin.qq.com, reject
+host, httpdns.kg.qq.com, reject
+host, httpdns.bilivideo.com, reject
+host, httpdns.browser.miui.com, reject
+host, resolver.msg.xiaomi.net, reject
+host, httpdns.alicdn.com, reject
+host, httpdns-api.aliyuncs.com, reject
+host, httpdns-sc.aliyuncs.com, reject
+host, amdc.alipay.com, reject
+host, ucdc.upaas.quark.cn, reject
+host, httpdns.danuoyi.tbcache.com, reject
+host, httpdns.cctv.com, reject
+host, httpdns-browser.platform.dbankcloud.cn, reject
+host, httpdns.huaweicloud.com, reject
+host, httpdns.c.cdnhwc2.com, reject
+host, httpdns.platform.dbankcloud.cn, reject
+host, httpdns.platform.dbankcloud.com, reject
+host, httpdns1.cc.cdnhwc5.com, reject
+host, doh.ptqy.gitv.tv, reject
+host, httpdns.baidu.com, reject
+host, httpsdns.baidu.com, reject
+host, httpdns.bcelive.com, reject
+host, httpdns.baidubce.com, reject
+host, dns.iqiyi.com, reject
+host, doh.iqiyi.com, reject
+host, dns.qiyipic.iqiyi.com, reject
+host, httpdns.n.shifen.com, reject
+host, httpdns.ocloud.heytapmobi.com, reject
+host, httpdns.push.heytapmobi.com, reject
+host, dns.jd.com, reject
+host, dotserver.douyucdn.cn, reject
+host, hdns.ksyun.com, reject
+host, httpdns.push.oppomobile.com, reject
+host, httpdns.ocloud.oppomobile.com, reject
+host, kuaishou.httpdns.pro, reject
+host, httpdns.kwd.inkuai.com, reject
+host, apidns.kwd.inkuai.com, reject
+host, apidns-js.kwd.inkuai.com, reject
+host, httpdns.meituan.com, reject
+host, httpdnsmultiapi.meituan.com, reject
+host, httpdnsmultiapivip.meituan.com, reject
+host, httpdns.music.163.com, reject
+host, httpdns.n.netease.com, reject
+host, httpdns-sdk.n.netease.com, reject
+host, httpdns.yunxindns.com, reject
+host, lofter.httpdns.c.163.com, reject
+host, music.httpdns.c.163.com, reject
+host, httpdns.zybang.com, reject
+host, httpdns.calorietech.com, reject
+host, dns.weibo.cn, reject
+host, hd.xiaojukeji.com, reject
+host, serveraddr.service.kugou.com, reject
+host, twns.p2ptun.qq.com, reject
+host, tp2p.kg.qq.com, reject
 
-HOST,yyapp-httpdns.gslb.yy.com,REJECT
-HOST,union-httpdns.gslb.yy.com,REJECT
-HOST,yuyin-httpdns.gslb.yy.com,REJECT
-HOST,httpdns-v6.gslb.yy.com,REJECT
-HOST,dns2.q2cdn.com,REJECT
-HOST,dns.weixin.qq.com,REJECT
-HOST,dns.weixin.qq.com.cn,REJECT
-HOST,aedns.weixin.qq.com,REJECT
-HOST,httpdns.kg.qq.com,REJECT
-HOST,httpdns.bilivideo.com,REJECT
-HOST,httpdns.browser.miui.com,REJECT
-HOST,resolver.msg.xiaomi.net,REJECT
-HOST,httpdns.alicdn.com,REJECT
-HOST,httpdns-api.aliyuncs.com,REJECT
-HOST,httpdns-sc.aliyuncs.com,REJECT
-HOST,amdc.alipay.com,REJECT
-HOST,ucdc.upaas.quark.cn,REJECT
-HOST,httpdns.danuoyi.tbcache.com,REJECT
-HOST,httpdns.cctv.com,REJECT
-HOST,httpdns-browser.platform.dbankcloud.cn,REJECT
-HOST,httpdns.huaweicloud.com,REJECT
-HOST,httpdns.c.cdnhwc2.com,REJECT
-HOST,httpdns.platform.dbankcloud.cn,REJECT
-HOST,httpdns.platform.dbankcloud.com,REJECT
-HOST,httpdns1.cc.cdnhwc5.com,REJECT
-HOST,doh.ptqy.gitv.tv,REJECT
-HOST,httpdns.baidu.com,REJECT
-HOST,httpsdns.baidu.com,REJECT
-HOST,httpdns.bcelive.com,REJECT
-HOST,httpdns.baidubce.com,REJECT
-HOST,dns.iqiyi.com,REJECT
-HOST,doh.iqiyi.com,REJECT
-HOST,dns.qiyipic.iqiyi.com,REJECT
-HOST,httpdns.n.shifen.com,REJECT
-HOST,httpdns.ocloud.heytapmobi.com,REJECT
-HOST,httpdns.push.heytapmobi.com,REJECT
-HOST,dns.jd.com,REJECT
-HOST,dotserver.douyucdn.cn,REJECT
-HOST,hdns.ksyun.com,REJECT
-HOST,httpdns.push.oppomobile.com,REJECT
-HOST,httpdns.ocloud.oppomobile.com,REJECT
-HOST,kuaishou.httpdns.pro,REJECT
-HOST,httpdns.kwd.inkuai.com,REJECT
-HOST,apidns.kwd.inkuai.com,REJECT
-HOST,apidns-js.kwd.inkuai.com,REJECT
-HOST,httpdns.meituan.com,REJECT
-HOST,httpdnsmultiapi.meituan.com,REJECT
-HOST,httpdnsmultiapivip.meituan.com,REJECT
-HOST,httpdns.music.163.com,REJECT
-HOST,httpdns.n.netease.com,REJECT
-HOST,httpdns-sdk.n.netease.com,REJECT
-HOST,httpdns.yunxindns.com,REJECT
-HOST,lofter.httpdns.c.163.com,REJECT
-HOST,music.httpdns.c.163.com,REJECT
-HOST,httpdns.yunxindns.com,REJECT
-HOST,httpdns.zybang.com,REJECT
-HOST,httpdns.calorietech.com,REJECT
-HOST,dns.weibo.cn,REJECT
-HOST,hd.xiaojukeji.com,REJECT
-HOST,httpdns.zybang.com,REJECT
-HOST,serveraddr.service.kugou.com,REJECT
-HOST,twns.p2ptun.qq.com,REJECT
-HOST,tp2p.kg.qq.com,REJECT
+ip-cidr, 39.156.140.30/32, reject, no-resolve
+ip-cidr, 39.156.140.47/32, reject, no-resolve
+ip-cidr, 39.156.140.245/32, reject, no-resolve
+ip-cidr, 42.81.232.18/32, reject, no-resolve
+ip-cidr, 42.187.182.106/32, reject, no-resolve
+ip-cidr, 42.187.182.123/32, reject, no-resolve
+ip-cidr, 42.187.184.154/32, reject, no-resolve
+ip-cidr, 43.130.30.237/32, reject, no-resolve
+ip-cidr, 43.130.30.240/32, reject, no-resolve
+ip-cidr, 43.137.153.151/32, reject, no-resolve
+ip-cidr, 43.137.159.31/32, reject, no-resolve
+ip-cidr, 43.152.112.101/32, reject, no-resolve
+ip-cidr, 43.153.248.120/32, reject, no-resolve
+ip-cidr, 60.28.172.100/32, reject, no-resolve
+ip-cidr, 61.151.231.157/32, reject, no-resolve
+ip-cidr, 101.32.104.104/32, reject, no-resolve
+ip-cidr, 106.39.206.21/32, reject, no-resolve
+ip-cidr, 106.39.206.25/32, reject, no-resolve
+ip-cidr, 106.39.206.70/32, reject, no-resolve
+ip-cidr, 111.31.201.194/32, reject, no-resolve
+ip-cidr, 111.31.241.76/32, reject, no-resolve
+ip-cidr, 111.31.241.140/32, reject, no-resolve
+ip-cidr, 111.206.147.156/32, reject, no-resolve
+ip-cidr, 111.206.147.210/32, reject, no-resolve
+ip-cidr, 111.206.148.27/32, reject, no-resolve
+ip-cidr, 116.128.177.249/32, reject, no-resolve
+ip-cidr, 116.130.224.150/32, reject, no-resolve
+ip-cidr, 116.130.224.205/32, reject, no-resolve
+ip-cidr, 117.185.247.73/32, reject, no-resolve
+ip-cidr, 123.151.48.171/32, reject, no-resolve
+ip-cidr, 123.151.48.193/32, reject, no-resolve
+ip-cidr, 123.151.48.208/32, reject, no-resolve
+ip-cidr, 123.151.54.50/32, reject, no-resolve
+ip-cidr, 180.153.202.85/32, reject, no-resolve
+ip-cidr, 183.192.196.31/32, reject, no-resolve
+ip-cidr, 203.205.129.102/32, reject, no-resolve
+ip-cidr, 203.205.234.132/32, reject, no-resolve
+ip-cidr, 220.196.159.73/32, reject, no-resolve
+ip-cidr, 203.107.1.0/24, reject, no-resolve
+ip-cidr, 186.76.76.200/32, reject, no-resolve
+ip-cidr, 180.76.76.200/32, reject, no-resolve
+ip-cidr, 101.124.19.122/32, reject, no-resolve
+ip-cidr, 103.224.222.208/32, reject, no-resolve
+ip-cidr, 119.29.29.98/32, reject, no-resolve
+ip-cidr, 119.29.29.99/32, reject, no-resolve
+ip-cidr, 59.111.239.61/32, reject, no-resolve
+ip-cidr, 59.111.239.62/32, reject, no-resolve
+ip-cidr, 115.236.121.51/32, reject, no-resolve
+ip-cidr, 115.236.121.195/32, reject, no-resolve
+ip-cidr, 39.97.130.51/32, reject, no-resolve
+ip-cidr, 39.97.128.148/32, reject, no-resolve
+ip-cidr, 118.89.204.198/23, reject, no-resolve
+ip-cidr, 81.71.61.216/32, reject, no-resolve
 
-IP-CIDR,39.156.140.30/32,REJECT,no-resolve
-IP-CIDR,39.156.140.47/32,REJECT,no-resolve
-IP-CIDR,39.156.140.245/32,REJECT,no-resolve
-IP-CIDR,42.81.232.18/32,REJECT,no-resolve
-IP-CIDR,42.187.182.106/32,REJECT,no-resolve
-IP-CIDR,42.187.182.123/32,REJECT,no-resolve
-IP-CIDR,42.187.184.154/32,REJECT,no-resolve
-IP-CIDR,43.130.30.237/32,REJECT,no-resolve
-IP-CIDR,43.130.30.240/32,REJECT,no-resolve
-IP-CIDR,43.137.153.151/32,REJECT,no-resolve
-IP-CIDR,43.137.159.31/32,REJECT,no-resolve
-IP-CIDR,43.152.112.101/32,REJECT,no-resolve
-IP-CIDR,43.153.248.120/32,REJECT,no-resolve
-IP-CIDR,60.28.172.100/32,REJECT,no-resolve
-IP-CIDR,61.151.231.157/32,REJECT,no-resolve
-IP-CIDR,101.32.104.104/32,REJECT,no-resolve
-IP-CIDR,106.39.206.21/32,REJECT,no-resolve
-IP-CIDR,106.39.206.25/32,REJECT,no-resolve
-IP-CIDR,106.39.206.70/32,REJECT,no-resolve
-IP-CIDR,111.31.201.194/32,REJECT,no-resolve
-IP-CIDR,111.31.241.76/32,REJECT,no-resolve
-IP-CIDR,111.31.241.140/32,REJECT,no-resolve
-IP-CIDR,111.206.147.156/32,REJECT,no-resolve
-IP-CIDR,111.206.147.210/32,REJECT,no-resolve
-IP-CIDR,111.206.148.27/32,REJECT,no-resolve
-IP-CIDR,116.128.177.249/32,REJECT,no-resolve
-IP-CIDR,116.130.224.150/32,REJECT,no-resolve
-IP-CIDR,116.130.224.205/32,REJECT,no-resolve
-IP-CIDR,117.185.247.73/32,REJECT,no-resolve
-IP-CIDR,123.151.48.171/32,REJECT,no-resolve
-IP-CIDR,123.151.48.193/32,REJECT,no-resolve
-IP-CIDR,123.151.48.208/32,REJECT,no-resolve
-IP-CIDR,123.151.54.50/32,REJECT,no-resolve
-IP-CIDR,180.153.202.85/32,REJECT,no-resolve
-IP-CIDR,183.192.196.31/32,REJECT,no-resolve
-IP-CIDR,203.205.129.102/32,REJECT,no-resolve
-IP-CIDR,203.205.234.132/32,REJECT,no-resolve
-IP-CIDR,220.196.159.73/32,REJECT,no-resolve
-IP-CIDR,203.107.1.0/24,REJECT,no-resolve
-IP-CIDR,186.76.76.200/32,REJECT,no-resolve
-IP-CIDR,180.76.76.200/32,REJECT,no-resolve
-IP-CIDR,101.124.19.122/32,REJECT,no-resolve
-IP-CIDR,103.224.222.208/32,REJECT,no-resolve
-IP-CIDR,119.29.29.98/32,REJECT,no-resolve
-IP-CIDR,119.29.29.99/32,REJECT,no-resolve
-IP-CIDR,59.111.239.61/32,REJECT,no-resolve
-IP-CIDR,59.111.239.62/32,REJECT,no-resolve
-IP-CIDR,115.236.121.51/32,REJECT,no-resolve
-IP-CIDR,115.236.121.195/32,REJECT,no-resolve
-IP-CIDR,39.97.130.51/32,REJECT,no-resolve
-IP-CIDR,39.97.128.148/32,REJECT,no-resolve
-IP-CIDR,118.89.204.198/23,REJECT,no-resolve
-IP-CIDR,81.71.61.216/32,REJECT,no-resolve
+ip6-cidr, 240e:928:1400:10::25/128, reject, no-resolve
+ip6-cidr, 2402:4e00:8030:1::17/128, reject, no-resolve
+ip6-cidr, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, reject, no-resolve
+ip6-cidr, 2408:8711:10:10::20/128, reject, no-resolve
+ip6-cidr, 2409:8702:4860:10::4d/128, reject, no-resolve
+ip6-cidr, 2402:db40:5100:1011::5/128, reject, no-resolve
+ip6-cidr, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, reject, no-resolve
 
-IP6-CIDR,240e:928:1400:10::25/128,REJECT,no-resolve
-IP6-CIDR,2402:4e00:8030:1::17/128,REJECT,no-resolve
-IP6-CIDR,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,REJECT,no-resolve
-IP6-CIDR,2408:8711:10:10::20/128,REJECT,no-resolve
-IP6-CIDR,2409:8702:4860:10::4d/128,REJECT,no-resolve
-IP6-CIDR,2402:db40:5100:1011::5/128,REJECT,no-resolve
-IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
-
-[rewrite_local]
+# ===== Rewrite =====
 ^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:\/v?[0-9]+)?\/(?:sign_)?(?:(?:d|ss)[46]?|resolve)\? url reject
 ^http:\/\/\[[0-9a-fA-F:]+\](?:\/v?[0-9]+)?\/(?:sign_)?(?:(?:d|ss)[46]?|resolve)\? url reject
 ^http:\/\/103\.44\.58\.64\/md\? url reject
@@ -150,13 +148,11 @@ IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 ^http:\/\/103\.41\.167\.237\/v2\/resolv url reject
 ^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d+\/httpdns\/ url reject
 ^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/ url reject
-
 ^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp url reject
 ^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ url reject
-
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ url reject-dict
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ url reject-dict
 ^https:\/\/ucdc\d?-upaas\.uc\.cn\/api\/v\d\/dns_query\? url reject-dict
 
-[mitm]
+# ===== MITM =====
 hostname = appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn
