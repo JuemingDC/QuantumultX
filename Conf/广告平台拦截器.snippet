@@ -9,9 +9,9 @@
 #!date=2026-05-02
 
 host-keyword, adstrategy, reject
-and,((host-keyword, tnc),(or,((host-suffix, capcutapi.com),(host-suffix, zijieapi.com),(host-suffix, isnssdk.com),(host-suffix, toutiaoapi.com),(host-suffix, bytedance.com),(host-suffix, snssdk.com),(host-suffix, sgsnssdk.com)))), direct
-and,((host-keyword, -ad-),(host-suffix, byteimg.com)), reject
-and,((host-keyword, ads),(host-keyword, -normal.zijieapi.com)), reject
+#and,((host-keyword, tnc),(or,((host-suffix, capcutapi.com),(host-suffix, zijieapi.com),(host-suffix, isnssdk.com),(host-suffix, toutiaoapi.com),(host-suffix, bytedance.com),(host-suffix, snssdk.com),(host-suffix, sgsnssdk.com)))), direct
+#and,((host-keyword, -ad-),(host-suffix, byteimg.com)), reject
+#and,((host-keyword, ads),(host-keyword, -normal.zijieapi.com)), reject
 host, lf-ad-ies.bytecdn.cn, reject
 host, dig.bdurl.net, reject
 host, extlog.snssdk.com, reject
