@@ -4,7 +4,7 @@
 
 已转换列表：
 
-① Telegram 重定向-PandaX-
+① Telegram 重定向-PandaX-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf Boxjs订阅-
 
 ② HTTPDNS拦截器-Kelee-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockHTTPDNS.snippet
 
