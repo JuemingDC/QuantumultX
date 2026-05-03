@@ -28,12 +28,12 @@ https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Boxjs/Ch
 
 ## 已转换列表
 
-| 序号 | 名称 | 来源 | 配置链接 |
-| :--: | :-- | :--: | :-- |
-| ① | Telegram 重定向 | PandaX | [TelegramRedirect.conf](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf) |
-| ② | HTTPDNS 拦截器 | Kelee | [BlockHTTPDNS.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockHTTPDNS.snippet) |
-| ③ | 广告平台拦截器 | Kelee | [BlockADs.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockADs.snippet) |
-| ④ | 可莉广告过滤器 | Kelee | [iKeleeADs.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/iKeleeADs.snippet) |
+| 序号 | 名称 | 来源 | 源文件更新日期 | 维护更新日期 | 维护状态 | 配置链接 |
+| :--: | :-- | :--: | :--: | :--: | :--: | :-- |
+| ① | Telegram 重定向 | PandaX | 见源仓库提交记录 | 见本仓库提交记录 | 维护中 | [TelegramRedirect.conf](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf) |
+| ② | HTTPDNS 拦截器 | Kelee | 见源仓库提交记录 | 见本仓库提交记录 | 维护中 | [BlockHTTPDNS.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockHTTPDNS.snippet) |
+| ③ | 广告平台拦截器 | Kelee | 见源仓库提交记录 | 见本仓库提交记录 | 维护中 | [BlockADs.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockADs.snippet) |
+| ④ | 可莉广告过滤器 | Kelee | 见源仓库提交记录 | 见本仓库提交记录 | 维护中 | [iKeleeADs.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/iKeleeADs.snippet) |
 ---
 
 ## 使用提示
