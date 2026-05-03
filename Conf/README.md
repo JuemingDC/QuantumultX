@@ -2,9 +2,11 @@
 如果我自行转换的内容影响到了相关仓库，请及时告知，稍后会删除。
 仅自用。
 
+本人的Boxjs订阅-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Boxjs/Chance%E3%81%AE%E8%AE%A2%E9%98%85.json
+
 已转换列表：
 
-① Telegram 重定向-PandaX-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf Boxjs订阅-
+① Telegram 重定向-PandaX-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf
 
 ② HTTPDNS拦截器-Kelee-https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockHTTPDNS.snippet
 
