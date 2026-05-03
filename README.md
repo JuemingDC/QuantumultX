@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Boxjs/Ch
 
 ## 已转换列表
 
-| 序号 | 名称 | 来源 | 源文件更新日期 | 维护更新日期 | 维护状态 | 配置链接 |
+| 序号 | 名称 | 来源 | 源文件更新日期 | 维护更新日期 | 维护状态 | 资源链接 |
 | :--: | :-- | :--: | :--: | :--: | :--: | :-- |
 | ① | Telegram 重定向 | PandaX | 2026.04.10 | 2026.05.01 | 维护中 | [TelegramRedirect.conf](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/Telegram/TelegramRedirect.conf) |
 | ② | HTTPDNS 拦截器 | Kelee | 2026.03.01 | 2026.05.02 | 维护中 | [BlockHTTPDNS.snippet](https://raw.githubusercontent.com/JuemingDC/QuantumultX/refs/heads/main/Conf/BlockHTTPDNS.snippet) |
