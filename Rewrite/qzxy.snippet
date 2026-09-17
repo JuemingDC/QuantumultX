@@ -1,0 +1,14 @@
+#!name=趣智校园-首页去广告
+#!desc=移除首页广告横幅及“每天赚（省）点零花钱”推广入口；基于趣智校园 6.5.32 抓包编写
+#!author=Magdalena
+#!date=2026-09-17
+
+
+# 清空首页广告链：对应上方 1 张大横幅和下方 2 张横幅
+^https:\/\/v3-api\.china-qzxy\.cn\/project\/adv\/chain\/get(?:\?.*)?$ url jsonjq-response-body '.data = []'
+
+# 清空推广入口列表，保留账户零钱数据
+^https:\/\/v3-api\.china-qzxy\.cn\/user\/coin\/info\/withAppAdvChannel(?:\?.*)?$ url jsonjq-response-body '.data.appAdvChannelList = []'
+
+
+hostname = %APPEND% v3-api.china-qzxy.cn
