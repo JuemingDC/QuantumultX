@@ -48,6 +48,10 @@
             {
               "key": "Lingogram",
               "label": "Lingogram"
+            },
+            {
+              "key": "Nagram",
+              "label": "Nagram"
             }
           ],
           "desc": "选择 t.me 链接跳转使用的 Telegram 客户端。"
