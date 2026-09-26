@@ -5,7 +5,7 @@
  * telegram_redirect_client
  *
  * 可选值：
- * Telegram / Swiftgram / Turrit / iMe / Nicegram / Lingogram
+ * Telegram / Swiftgram / Turrit / iMe / Nicegram / Lingogram / Nagram
  */
 
 const SCHEME = {
@@ -15,6 +15,7 @@ const SCHEME = {
   iMe: "ime",
   Nicegram: "ng",
   Lingogram: "lingo",
+  Nagram: "na",
 };
 
 function readClient() {
